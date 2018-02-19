@@ -1,0 +1,151 @@
+%-------------------------
+% Resume in Latex
+% Author : William Stuckey
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Line Spacing
+\renewcommand{\baselinestretch}{1.16}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/Loolzy}{\Large Dmitrii Aleksandr Galantsev}} & Email : \href{mailto:dmitriigalantsev@gmail.com}{dmitriigalantsev@gmail.com}\\
+  \href{ckey}{https://github.com/Loolzy} & Mobile : (317) 316-7303 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University}{Bloomington, IN}
+      {Bachelor of Science in Computer Science - Freshman}{August 2017 -- Present}
+    \break Majoring in Computer Science with interest in Computer Systems and Low Level Development.
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Indiana University}{Bloomington, IN}
+      {Research and Teaching Assistant}{January 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Research - Security}
+          {Currently funded under Professor Yan Huang at Indiana University, my research works to address the issue of the “shoulder surfing” of passwords; looking into alternate methods of user authentication and their viability in a consumer marketplace. After completed, I will begin research on the circumvention of malicious program detection via dynamic source code analysis and modification.}
+        \resumeItem{Teaching Assistant - CSCI-C 211}
+          {Currently working as an undergraduate assistant for CSCI-C 211 (Introduction to Computing) at Indiana University. The class is over the basics of programming in a functional environment and I am responsible for leading labs, recitation discussion, and holding office hours twice a week.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Monon Recreational Center}{Carmel, IN}
+      {Swim Instructor}{April 2016 - May 2017}
+      \resumeItemListStart
+        \resumeItem{Swim Instructor}
+          {I was responsible for not only teaching children of all ages and learning abilities how to swim, but was also tasked with the organization of several swim lesson schedules and finances.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bub's Burgers and Ice Cream}{Carmel, IN}
+      {Waiter}{January 2016 - April 2016}
+      \resumeItemListStart
+        \resumeItem{Waiter}
+          {Provided excellent customer service by working closely with restaurant staff to ensure that orders were served in an efficient manner. In addition to this, I trained incoming staff regarding the restaurant’s procedures, culture, and practices.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Tendrils Live Wallpaper}
+      {Tendrils Live Wallpaper is a published Android application with over three hundred downloads and nearly five stars. The base visual simulation is written in Processing (Java) and all dependencies were ported to Android Studio to ensure a real time simulation environment. The app is freely available on the Google Play Store.}
+    \resumeSubItem{Digital Waves Live Wallpaper}
+      {Much like Tendrils Live Wallpaper, Digital Waves Live Wallpaper was created using the same development style. While this app is not as well known in the Google Play Store, I believe it demonstrates both a better simulation environment (the simulation is three-dimensional) and more optimized resource utilization.}
+    \resumeSubItem{Milky Way Express}
+      {My first attempt at Android Development, Milky Way Express is a game about avoiding asteroids in space. I wrote the app in Android Studio using Kotlin, opting to make my own game engine instead of using a preexisting one. The game is available on the Google Play store and the code is available on my GitHub account.}
+    \resumeSubItem{cppLife}
+      {An open source implementation of John Conway's 'Game of Life', written in C++. The project is ongoing and I hope that the development will one day lead to a much more robust simulation environment, custom physics integration, and a streamlined UI.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{While my primary language is Java, I have knowledge in C++ (with knowledge in templates, OOP, STL, and the SFML library set), Kotlin, Python, C\#, and Racket.}
+    \resumeSubItem{Software}{git, Jetbrains Suite, Adobe InDesign, Adobe Photoshop, Blender, GNU/UNIX utilities, \LaTeX.}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
