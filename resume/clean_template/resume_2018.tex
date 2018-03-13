@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Dmitrii}{Galantsev}{ \urlstyle{same}\url{https://github.com/dmitrii-galantsev} \\
+\href{mailto:dmitriigalantsev@gmail.com}{dmitriigalantsev@gmail.com} | (317)-316-7303
+}
+
+\section{Experience}
+
+\runsubsection{Indiana University}
+\descript{| Intro to Computer Science Undergraduate Instructor }
+\location{January 2018 - Present | Bloomington, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Currently employed under Indiana University Bloomington as a C211 (Intro to Computer Science) Undergraduate Instructor.
+\item Teaching the lab and helping students during office hours.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Upwork}
+\descript{| Linux/Unix Shell Scripting Expert }
+\location{July 2017 - September 2017 | Online}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item I was contacted by a PhD candidate to assist with her research.
+\item During my employment I wrote descriptions for bash commands to train a Natural Language Processing AI.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Jonathan Byrd’s}
+\descript{| Catering team member }
+\location{May 2017 - August 2017 | Carmel, IN}
+\begin{tightemize}
+\item Worked at Jonathan Byrd’s as a catering professional. Job included: setting up tables,
+cleaning up after the events, and surving food to patrons.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Fresh Thyme Grocery Store}
+\descript{| Front End Assistant}
+\location{July 2015 - January 2016 | Carmel, IN}
+\begin{tightemize}
+\item Assisted customers in finding products, and checking out.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Indiana University}
+\descript{| Independent Undergraduate Research}
+\location{Jan 2014 – Present | Ithaca, NY}
+I’m currently doing research under Professor Yan Huang in the new and evolving field of GPU Security.
+\newline
+Current focus is Security of GPU Covert Channels.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\runsubsection{Indiana University}
+\descript{| Bachelor's in Computer Science}
+\location{Expected May 2021 | Bloomington, IN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Popi’s Parley}
+\descript{| Chat application written in C}
+Uses multiple TCP connections to establish a working chat application
+between up to 95 clients.
+\newline
+\runsubsection{NadekoBot}
+\descript{| One of the biggest bots for Discord Chat}
+Worked with a team to provide multiple utilities for
+servers such as: 
+\newline
+Message filtering, Music playback, Automatic Ban, and et cetera.
+\newline
+\runsubsection{GiantBot}
+\descript{| A small bot written for a Gigantic Discord server}
+Used to access rank information on the server.
+\newline
+\runsubsection{Peddle}
+\descript{| Final project for Digital Electronics class an Carmel High School}
+Peddle is a Guitar pedal which can be
+modified over wifi. Different effects can be toggled using either the Wifi web interface, 
+or physical stomp buttons on the pedal.
+\sectionsep
+
+\section{Languages}
+\begin{minipage}[t]{.4\textwidth}
+\subsection{Programming}
+\location{Over 1000 lines:}
+C \textbullet{} Java \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+Rust \textbullet{} Python \textbullet{} Ruby \textbullet{} C\# \textbullet{} Bash \textbullet{} \LaTeX
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Spoken \& Written}
+\location{Native fluency:} English, Russian\\
+\end{minipage}
+\end{document}  \documentclass[]{article}
