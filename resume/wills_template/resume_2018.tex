@@ -24,7 +24,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Line Spacing
-\renewcommand{\baselinestretch}{1.36}
+\renewcommand{\baselinestretch}{1.30}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -58,12 +58,14 @@
   }
 }
 
+
+
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-        \textbf{\textit{\small#3}} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \item{
+        \textbf{#1}\hfill\textit{\small#2}\\%
+        \textbf{\textit{\small#3}}\hfill\textit{\small#4}%
+    }%
+    \vspace{-0.2cm}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -92,9 +94,8 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indiana University}{Bloomington, IN}
-      {Bachelors in Computer Science - Sophomore}{August 2017 -- Present}
-    \break Majoring in Computer Science with cognate in Operating Systems.
-
+      {Bachelors in Computer Science - Sophomore}{August 2017 -- May 2021}\par
+      Majoring in Computer Science with cognate in Operating Systems.
   \resumeSubHeadingListEnd
 
 
@@ -107,11 +108,11 @@
       {Research and Teaching Assistant}{January 2018 - Present}
       \resumeItemListStart
         \resumeItem{Research - Security}
-                   {Conducted research under Professor Yan Huang in the field of HDD Security. Focused on running arbitrary code on the HDD central processor.}
+                   {Conducted research under Professor Yan Huang in the field of Hard Disk Drive Security. Focused on running arbitrary code on the HDD central processor. Searched for vulnerabilities on enterprise grade HDDs.}
         \resumeItem{Teaching Assistant - CSCI-C 291 (C and Unix)}
-                   {Provided assistance with teaching of the C language in Unix environment. Rewritten the final and encouraged students to create Conway's Game of Life.}
+                   {Provided assistance with teaching of the C language in Unix environment. Rewrote the final and encouraged students to create Conway's Game of Life.}
         \resumeItem{Teaching Assistant - CSCI-C 211 (Introduction to Computer Science)}
-                   {Helped students with introduction to Computer Science in Racket (PLT Scheme). Taught a lab with another TA.}
+                   {Helped students with introduction to Computer Science in Racket (PLT Scheme). Taught a lab of 30 students and improved their understanding of functional programming.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -139,9 +140,9 @@
       {Linux/Unix Shell Scripting Expert}{July 2017 - September 2017}
       \resumeItemListStart
       \resumeItemSmall
-                 {Assisted a PhD candidate with their research.}
-      \resumeItemSmall
                  {Wrote detailed descriptions for bash commands to train a Natural Language Processing AI.}
+      \resumeItemSmall
+                 {Assisted a PhD candidate with their research.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -155,7 +156,7 @@
     \resumeSubItem{GiantBot}
                   {A small python bot written for a Gigantic game Discord server. Used to access rank information on the server.}
     \resumeSubItem{Peddle}
-                  {Final project for Digital Electronics class an Carmel High School. Peddle is a Guitar pedal which can be modified over wifi. Different effects can be toggled using either the Wifi web interface, or physical stomp buttons on the pedal.}
+                  {Final project for Digital Electronics class at Carmel High School. Peddle is a Guitar pedal which can be modified over wifi. Different effects can be toggled using either the Wifi web interface, or physical stomp buttons on the pedal.}
   \resumeSubHeadingListEnd
 
 
@@ -163,11 +164,11 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
   \resumeSubItem{Programming Languages}
-                {C, Java, Bash, Python, C\#, and Racket.}
+                {C, Java, Bash, ARM Assembly, NASM Assembly, Verilog, Python, C\#, and Racket.}
   \resumeSubItem{Software}
-                {Photoshop, Gimp, Vim, Linux/Unix, Windows, Git, VmWare, gdb}
+                {Vim, Linux/Unix, gdb, Git, Windows, VmWare, Photoshop, Gimp.}
   \resumeSubHeadingListEnd
 
 
-%-------------------------------------------
+%---------------------------------------
 \end{document}
