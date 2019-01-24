@@ -41,7 +41,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -72,7 +72,7 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\vspace{-2pt}}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -85,8 +85,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/dmitrii-galantsev}{\LARGE Dmitrii Aleksandr Galantsev}} & Email : \href{mailto:dmitriigalantsev@gmail.com}{dmitriigalantsev@gmail.com}\\
-  \href{ckey}{https://github.com/dmitrii-galantsev} & Mobile : (317) 316-7303 \\
+  \textbf{\href{https://www.linkedin.com/in/dmitrii-galantsev-a35352174/}{\LARGE Dmitrii Aleksandr Galantsev}} & Email : \href{mailto:dmitriigalantsev@gmail.com}{dmitriigalantsev@gmail.com}\\
+  \href{https://github.com/dmitrii-galantsev}{https://github.com/dmitrii-galantsev} & Mobile : (317) 316-7303 \\
+  \href{https://www.linkedin.com/in/dmitrii-galantsev-a35352174/}{https://www.linkedin.com/in/dmitrii-galantsev-a35352174/}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -104,25 +105,25 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Indiana University}{Bloomington, IN}
-      {Research and Teaching Assistant}{January 2018 - Present}
-      \resumeItemListStart
-        \resumeItem{Research - Security}
-                   {Conducted research under Professor Yan Huang in the field of Hard Disk Drive Security. Focused on running arbitrary code on the HDD central processor. Searched for vulnerabilities on enterprise grade HDDs.}
-        \resumeItem{Teaching Assistant - CSCI-C 291 (C and Unix)}
-                   {Provided assistance with teaching of the C language in Unix environment. Rewrote the final and encouraged students to create Conway's Game of Life.}
-        \resumeItem{Teaching Assistant - CSCI-C 211 (Introduction to Computer Science)}
-                   {Helped students with introduction to Computer Science in Racket (PLT Scheme). Taught a lab of 30 students and improved their understanding of functional programming.}
-      \resumeItemListEnd
-
-    \resumeSubheading
       {Rosvall Lab}{Bloomington, IN}
       {RFID Technician}{October 2018 - Present}
       \resumeItemListStart
       \resumeItemSmall
-                 {Debug and set up RFID scanners for bird tracking research.}
+				 {Tasked with updating and modifying firmware for RFID readers. RFID readers called \href{https://github.com/dmitrii-galantsev/ETAG_Rosvall}{ETAGs} are used for biological research where they collect data about Tree swallows and their behavior in the wild. I was put in charge of educating the biology lab members on usage and simple troubleshooting.}
       \resumeItemSmall
-                 {Perform antenna and scanner maintenance.}
+                 {Currently in the process of creating a modular prototype which is highly focused on reliability and low power consumption. A Nucleo board with STM32L432 processor is used which is communicating with a separate RFID reader module via I2C protocol.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Indiana University}{Bloomington, IN}
+      {Research and Teaching Assistant}{January 2018 - January 2019}
+      \resumeItemListStart
+        \resumeItem{Undergraduate Researcher - Security}
+                   {Conducted research under Professor Yan Huang in the field of Hard Disk Drive Security. Focused on running arbitrary code on the HDD processor. Searched for vulnerabilities on enterprise grade HDDs. Learned about JTAG and firmware modification.}
+        \resumeItem{Teaching Assistant - CSCI-C 291 (C and Unix)}
+                   {Provided assistance with teaching the C language in a Unix environment. Rewrote the final, and guided students in creation of Conway's Game of Life.}
+        \resumeItem{Teaching Assistant - CSCI-C 211 (Introduction to Computer Science)}
+                   {Helped students with introduction to Computer Science in Racket (PLT Scheme). Taught a lab of 30 students and improved their understanding of functional programming.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -130,19 +131,9 @@
       {Office Assistant}{May 2018 - August 2018}
       \resumeItemListStart
       \resumeItemSmall
-                 {Managed payroll and travel tracking for the company.}
+                 {Completed organizational tasks for a small company. Learned how to manage and visualize payroll information.}
       \resumeItemSmall
-                 {Organized hundreds of references for academic papers produced by the company.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Upwork}{Online}
-      {Linux/Unix Shell Scripting Expert}{July 2017 - September 2017}
-      \resumeItemListStart
-      \resumeItemSmall
-                 {Wrote detailed descriptions for bash commands to train a Natural Language Processing AI.}
-      \resumeItemSmall
-                 {Assisted a PhD candidate with their research.}
+                 {Put in charge of organizing, and collecting reference data for academic papers written by the company. Collected and filtered data from huge reference databases. Used bash and AHK scripting to speed up the tasks.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -151,12 +142,12 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Popi's Parley}
-                  {Chat application written in C. Uses multiple TCP connections to establish a working chat application between up to 95 clients.}
+	\resumeSubItem{\href{https://github.com/dmitrii-galantsev/NUCLEO_Rosvall}{Nucleo Rosvall}}
+                  {A highly modular RFID reader prototype which will be used to replace the outdated ETAGs design. Entire project is written in C++ and uses SparkFun modules as extensions of choice.}
     \resumeSubItem{GiantBot}
-                  {A small python bot written for a Gigantic game Discord server. Used to access rank information on the server.}
-    \resumeSubItem{Peddle}
-                  {Final project for Digital Electronics class at Carmel High School. Peddle is a Guitar pedal which can be modified over wifi. Different effects can be toggled using either the Wifi web interface, or physical stomp buttons on the pedal.}
+                  {A small python bot written for a Gigantic game Discord server. Used to access rank information on the server. It was used very frequently by community members due to its simplicity and short response time.}
+	\resumeSubItem{\href{https://github.com/dmitrii-galantsev/peddle}{Peddle}}
+                  {Peddle is a Guitar pedal which can be modified over wifi. Different effects can be toggled using either the Wifi web interface, or physical stomp buttons on the pedal. Guitar pedal community showed interest, but RPi was not fast enough to generate more complicated effects.}
   \resumeSubHeadingListEnd
 
 
@@ -164,9 +155,9 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
   \resumeSubItem{Programming Languages}
-                {C, Java, Bash, ARM Assembly, NASM Assembly, Verilog, Python, C\#, and Racket.}
+                {C, C++, Java, Bash, ARM Asm, NASM Asm, Verilog, Python, C\#, and Racket.}
   \resumeSubItem{Software}
-                {Vim, Linux/Unix, gdb, Git, Windows, VmWare, Photoshop, Gimp.}
+				{Vim, Linux/Unix, gdb, Git, Windows, VMWare ESX(I), Adobe Suite, Gimp.}
   \resumeSubHeadingListEnd
 
 
